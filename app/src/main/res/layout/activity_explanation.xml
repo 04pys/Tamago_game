@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explanation">
+    <TextView
+        android:id="@+id/first"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="1. 달걀을 깨고 싶다면, 달걀을 터치한다"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+/>
+    <TextView
+        android:id="@+id/second"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="2. 달걀이 깨질 때까지 연속해서 터치한다"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        />
+    <TextView
+        android:id="@+id/third"
+        android:text="3. 달걀의 체력을 높이고 싶으면, 쓰다듬기 버튼을 눌러서 위로해준다"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/second"
+        />
+    <TextView
+        android:id="@+id/fourth"
+        android:text="4. 달걀의 체력을 0으로 만들면 귀여운 병아리를 획득할 수 있다!"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/third"
+        />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth"
+        android:text="게임 시작"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/title"
+
+        />
+    <Button
+        android:id="@+id/GoToMain"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth"
+        android:text="뒤로 가기"
+        android:textSize="35dp"
+        android:backgroundTint="@color/title"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
